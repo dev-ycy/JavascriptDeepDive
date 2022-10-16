@@ -10,7 +10,7 @@
 - 문서 노드: 문자열 "#document"를 반환
 
 ## 39.5 요소 노드의 텍스트 조작
-- `nodeValue`
+- `nodeValue`  
 `nodeValue` 프로퍼티는 getter, setter 모두 존재하는 접근자 프로퍼티입니다.    
 텍스트 노드 객체의 값(텍스트)을 반환합니다. 문서 노드나 요소 노드의 `nodeValue`로 참조 시 null을 반환합니다.  
 **순서**
@@ -43,18 +43,19 @@ DOM 조작은 리플로우나 리페인트가 일어날 수 있으므로 조심�
 - `createTextNode`
 텍스트 노드를 생성하여 반환
 
-**복수의 노드 생성 및 추가**
+### 복수의 노드 생성 및 추가
 `DocumentFragment` 노드를 생성 후에 그 노드에 다른 노드들을 생성 후 추가시킵니다.  
 그 후 `DomcumentFramgment` 만 기존 DOM에 추가하면 리플로우와 리페인트를 줄일 수 있습니다.
+
 
 ### 노드 삽입
 - `before`  
 노드 객체 또는 DOM 문자열을 선택한 노드 앞에 삽입
 
-`after`  
+- `after`  
 노드 객체 또는 DOM 문자열을 선택한 노드 뒤에 삽입
 
-`prepend`  
+- `prepend`  
 노드 객체 또는 DOM 문자열을 선택한 요소의 첫 번째 자식요소로 삽입
 
 - `append`  
