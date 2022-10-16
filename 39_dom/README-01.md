@@ -60,7 +60,7 @@
 
 - 모든 노드는 Object, EventTarget, Node 인터페이스를 상속받는다.
 - 문서 노드는 Document, HTMLDOcument 인터페이스를 상속받는다.
-- 어트리뷰트 노드는 Attr, ㅌ게스트 노드는 CharacterData 인터페이스를 각각 상속받는다.
+- 어트리뷰트 노드는 Attr, 텍스트 노드는 CharacterData 인터페이스를 각각 상속받는다.
 - 모든 노드는 Element 인터페이스를 상속받는다.
 - 또한 요소 노드는 추가적으로 HTMLElement와 태그의 종류별로 세분화된 HTMLHtmlElement, HTMLHeadElement, HTMLBodyElement 등의 인터페이스를 상속받는다.
 
@@ -124,7 +124,7 @@ p {...} // 모든 P 태그 요소 선택
 .foo {...} // class 값이 foo 인 요소를 모두 선택
 input[type=text] {...} // input 요소 중 type 이 text 인 요소를 모두 선택
 div p {...} // div 의 후손 중 p 요소 모두 선택
-div > p {...} // div 의 사직 중 p를 모두 선택
+div > p {...} // div 의 자식 중 p를 모두 선택
 p + ul {...} // p 요소의 형제 요소 중에 p 요소 바로 뒤에 위치하는 ul 요소를 선택
 p ~ ul {...} // p 요소의 형제 요소 중에 p 요소 뒤에 위치하는 ul 요소를 모두 선택
 a:hover {...} // hover 상태인 a 요소를 모두 선택
