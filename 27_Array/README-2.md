@@ -170,11 +170,11 @@
     ```
     const fruits = ["banana", "apple", "orange", "orange", "apple"];
     const count = fruits.reduce((acc, cur)=> {
-      // 첫 번째 수노히시 acc는 초기값인 {}고, cur 은 첫 번째 요소인 "banana" 다.
+      // 첫 번째 순환시 acc는 초기값인 {}고, cur 은 첫 번째 요소인 "banana" 다.
       // 초기값으로 전달받은 빈 객체에 요소값을 cur 프로퍼티 키로, 요소의 개수를 프로퍼티 값으로 할당한다.
       // 만약 프로퍼티 값이 undefined이면 프로퍼리 값을 1로 초기화한다.
 
-      acc=[cur] = (acc[cur] || 0) + 1;
+      acc[cur] = (acc[cur] || 0) + 1;
       return acc;
     }, {});
 
